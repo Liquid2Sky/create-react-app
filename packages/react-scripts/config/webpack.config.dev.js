@@ -145,12 +145,22 @@ module.exports = {
         include: paths.appSrc,
       },
       {
+        test: /\.(js|jsx)$/,
+        exclude: /node_modules/,
+        use: ['babel-loader'],
+      },
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: ['babel-loader', 'eslint-loader'],
+      },
+      {
         test: /\.scss$/,
         loader: [
           require.resolve('style-loader'),
           require.resolve('css-loader'),
           require.resolve('sass-loader'),
-        ]
+        ],
       },
       {
         // "oneOf" will traverse all following loaders until one will

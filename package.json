@@ -34,5 +34,8 @@
     "yarn.lock": [
       "git rm --cached"
     ]
+  },
+  "dependencies": {
+    "eslint-config-standard-react": "^6.0.0"
   }
 }
