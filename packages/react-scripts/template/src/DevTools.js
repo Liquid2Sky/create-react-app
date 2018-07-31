@@ -1,4 +1,5 @@
 import React from 'react';
+import ChartMonitor from 'redux-devtools-chart-monitor'
 
 // Exported from redux-devtools
 import { createDevTools } from 'redux-devtools';
