@@ -1,7 +1,7 @@
 #!groovy
 
 node {
-    def projectName = "map-react"
+    def projectName = "XXX-PROJECT-NAME"
 
     stage ('checkout') {
         checkout scm
