@@ -35,6 +35,9 @@ module.exports = function(
   // Copy over some of the devDependencies
   appPackage.dependencies = appPackage.dependencies || {};
 
+  // Set Homepage Variable
+  appPackage.homepage = './'
+
   // Setup the script rules
   appPackage.scripts = {
     start: 'react-scripts start',
