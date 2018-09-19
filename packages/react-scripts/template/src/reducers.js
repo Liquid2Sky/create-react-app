@@ -1,22 +1,22 @@
-import { combineReducers } from 'redux';
-import { ADD_FOO } from './actions';
+import { combineReducers } from 'redux'
+import { ADD_FOO } from './actions'
 
-function foos(state = [], action) {
+function foos (state = [], action) {
   switch (action.type) {
     case ADD_FOO:
       return [
         ...state,
         {
-          text: action.string,
-        },
-      ];
+          text: action.string
+        }
+      ]
     default:
-      return state;
+      return state
   }
 }
 
 const fooApp = combineReducers({
-  foos,
-});
+  foos
+})
 
-export default fooApp;
+export default fooApp
