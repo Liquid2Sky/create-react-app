@@ -1,6 +1,6 @@
 {
   "name": "@raumobil/react-scripts",
-  "version": "1.1.4-raumo.7",
+  "version": "1.1.4-raumo.8",
   "description": "Configuration and scripts for Create React App.",
   "repository": "raumobil/create-react-app",
   "license": "MIT",
@@ -67,6 +67,7 @@
     "react-dom": "^16.4.0",
     "react-redux": "^5.0.7",
     "react-styleguidist": "^7.1.0",
+    "react-svg-loader": "^2.1.0",
     "redux": "^4.0.0",
     "redux-devtools": "^3.4.1",
     "redux-devtools-chart-monitor": "^1.7.0",
