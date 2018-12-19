@@ -237,6 +237,8 @@ module.exports = {
             ],
           },
           {
+            // apply this loader only to SVGs inside the src/assets folder
+            // every other SVG will be handled by file-loader
             test: /assets\/.*\.svg$/,
             use: [
               {

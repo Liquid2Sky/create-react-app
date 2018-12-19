@@ -260,6 +260,8 @@ module.exports = {
             // Note: this won't work without `new ExtractTextPlugin()` in `plugins`.
           },
           {
+            // apply this loader only to SVGs inside the src/assets folder
+            // every other SVG will be handled by file-loader
             test: /assets\/.*\.svg$/,
             use: [
               {
