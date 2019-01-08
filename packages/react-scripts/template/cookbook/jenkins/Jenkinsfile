@@ -1,0 +1,38 @@
+#!groovy
+
+node {
+    def projectName = "XXX-PROJECT-NAME"
+
+    stage ('checkout') {
+        checkout scm
+    }
+
+    stage ('build') {
+        // install node dependencies
+        sh 'npm install'
+    }
+
+    stage ('deploy') {
+        if (env.BRANCH_NAME == 'master') {
+            // -- jsdoc --
+            // make sure directory exists
+            sh "sudo mkdir -p /var/www/docs/${projectName}/jsdoc"
+
+            // create jsdoc
+            sh "sudo rm -rf /var/www/docs/${projectName}/jsdoc"
+            sh "sudo jsdoc src -r -d /var/www/docs/${projectName}/jsdoc"
+
+            // -- styleguidist --
+            // build styleguide
+            sh "sudo ./node_modules/.bin/styleguidist build"
+
+            // make sure directory exists
+            sh "sudo mkdir -p /var/www/docs/${projectName}/styleguide"
+
+            // sync to docs folder
+            sh "sudo rsync -av ./styleguide/ /var/www/docs/${projectName}/styleguide"
+            // copy
+
+        }
+    }
+}

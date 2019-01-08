@@ -93,6 +93,9 @@ module.exports = function(
 
   const useTypeScript = appPackage.dependencies['typescript'] != null;
 
+  // Set Homepage Variable
+  appPackage.homepage = './'
+
   // main file for libs
   appPackage.main = 'lib/components/index.js'
 
