@@ -20,8 +20,8 @@
     "utils"
   ],
   "bin": {
-    "babel": "./node_modules/.bin/rimraf",
-    "eslint": "./node_modules/.bin/rimraf",
+    "babel": "./node_modules/.bin/babel",
+    "eslint": "./node_modules/.bin/eslint",
     "react-scripts": "./bin/react-scripts.js",
     "rimraf": "./node_modules/.bin/rimraf"
   },
@@ -29,6 +29,7 @@
   "dependencies": {
     "@babel/core": "7.1.6",
     "@svgr/webpack": "2.4.1",
+    "babel-cli": "^6.26.0",
     "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "9.0.0",
     "babel-jest": "23.6.0",
