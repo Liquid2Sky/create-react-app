@@ -1,0 +1,28 @@
+{
+  "extends": ["standard", "standard-react"],
+  "parser": "babel-eslint",
+  "rules": {
+    "curly": ["error", "all"],
+    "comma-dangle": ["error", "always-multiline"],
+    "prefer-destructuring": ["error"],
+    "yoda": "error",
+    "no-unreachable": "error",
+    "no-alert": "error",
+    "prefer-const": "error",
+    "no-console": "error"
+  },
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true,
+      "modules": true,
+      "experimentalObjectRestSpread": true
+    }
+  },
+  "plugins": ["jest"],
+  "env": {
+    "jest/globals": true,
+    "browser": true
+  }
+}

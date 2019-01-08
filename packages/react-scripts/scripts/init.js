@@ -102,6 +102,7 @@ module.exports = function(
     build: 'react-scripts build',
     test: 'react-scripts test',
     eject: 'react-scripts eject',
+    eslint: 'eslint --ext .js,.jsx src/',
     prepare: 'rimraf lib/* && export NODE_ENV=production && babel src --out-dir lib'
   };
 
