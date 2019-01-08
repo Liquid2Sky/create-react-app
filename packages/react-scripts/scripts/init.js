@@ -93,12 +93,16 @@ module.exports = function(
 
   const useTypeScript = appPackage.dependencies['typescript'] != null;
 
+  // main file for libs
+  appPackage.main = 'lib/components/index.js'
+
   // Setup the script rules
   appPackage.scripts = {
     start: 'react-scripts start',
     build: 'react-scripts build',
     test: 'react-scripts test',
     eject: 'react-scripts eject',
+    prepare: 'rimraf lib/* && export NODE_ENV=production && babel src --out-dir lib'
   };
 
   // Setup the eslint config
@@ -108,6 +112,16 @@ module.exports = function(
 
   // Setup the browsers list
   appPackage.browserslist = defaultBrowsers;
+
+  // babel config
+  appPackage.babel = {
+    plugins: [
+      'transform-es2015-modules-commonjs'
+    ],
+    presets: [
+      'babel-preset-react-app'
+    ]
+  }
 
   fs.writeFileSync(
     path.join(appPath, 'package.json'),
