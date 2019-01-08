@@ -21,6 +21,7 @@
   ],
   "bin": {
     "babel": "./node_modules/.bin/rimraf",
+    "eslint": "./node_modules/.bin/rimraf",
     "react-scripts": "./bin/react-scripts.js",
     "rimraf": "./node_modules/.bin/rimraf"
   },
