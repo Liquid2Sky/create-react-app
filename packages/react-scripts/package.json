@@ -1,6 +1,6 @@
 {
   "name": "@raumobil/react-scripts",
-  "version": "2.1.3-raumo.1",
+  "version": "2.1.3-raumo.2",
   "description": "Configuration and scripts for Create React App.",
   "repository": "raumobil/create-react-app",
   "license": "MIT",
@@ -20,10 +20,7 @@
     "utils"
   ],
   "bin": {
-    "babel": "./node_modules/.bin/babel",
-    "eslint": "./node_modules/.bin/eslint",
-    "react-scripts": "./bin/react-scripts.js",
-    "rimraf": "./node_modules/.bin/rimraf"
+    "react-scripts": "./bin/react-scripts.js"
   },
   "types": "./lib/react-app.d.ts",
   "dependencies": {
