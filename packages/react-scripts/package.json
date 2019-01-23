@@ -20,10 +20,7 @@
     "utils"
   ],
   "bin": {
-    "babel": "./node_modules/.bin/babel",
-    "eslint": "./node_modules/.bin/eslint",
-    "react-scripts": "./bin/react-scripts.js",
-    "rimraf": "./node_modules/.bin/rimraf"
+    "react-scripts": "./bin/react-scripts.js"
   },
   "types": "./lib/react-app.d.ts",
   "dependencies": {
