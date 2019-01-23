@@ -3,13 +3,14 @@
   "parser": "babel-eslint",
   "rules": {
     "curly": ["error", "all"],
-    "comma-dangle": ["error", "always-multiline"],
-    "prefer-destructuring": ["error"],
+    "prefer-destructuring": ["error", {"object": true, "array": false}],
     "yoda": "error",
     "no-unreachable": "error",
     "no-alert": "error",
     "prefer-const": "error",
-    "no-console": "error"
+    "no-console": "error",
+    "comma-dangle": ["warn", "always-multiline"],
+    "object-curly-spacing": "warn"
   },
   "parserOptions": {
     "ecmaVersion": 6,
