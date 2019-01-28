@@ -106,7 +106,9 @@ module.exports = function(
     test: 'react-scripts test',
     eject: 'react-scripts eject',
     eslint: 'eslint --ext .js,.jsx src/ --max-warnings 0',
-    prepare: 'rimraf lib/* && export NODE_ENV=production && babel src --out-dir lib'
+    prepare: 'rimraf lib/* && export NODE_ENV=production && babel src --out-dir lib',
+    analyze: 'source-map-explorer build/static/js/main.*.js',
+    'analyze-deps': 'find build/static/js/**.chunk.js | head -n 1 | xargs source-map-explorer'
   };
 
   // Setup the eslint config
