@@ -1,6 +1,6 @@
 {
   "name": "@raumobil/react-scripts",
-  "version": "2.1.3-raumo.3",
+  "version": "2.1.3-raumo.4",
   "description": "Configuration and scripts for Create React App.",
   "repository": "raumobil/create-react-app",
   "license": "MIT",
@@ -61,6 +61,7 @@
     "jest": "23.6.0",
     "jest-pnp-resolver": "1.0.1",
     "jest-resolve": "23.6.0",
+    "jsdoc": "^3.5.5",
     "mini-css-extract-plugin": "0.4.3",
     "optimize-css-assets-webpack-plugin": "5.0.1",
     "pnp-webpack-plugin": "1.1.0",
@@ -70,6 +71,7 @@
     "postcss-safe-parser": "4.0.1",
     "react-app-polyfill": "^0.2.0",
     "react-dev-utils": "^7.0.1",
+    "react-styleguidist": "^8.0.6",
     "resolve": "1.8.1",
     "rimraf": "^2.6.3",
     "sass-loader": "7.1.0",
